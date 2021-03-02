@@ -1,9 +1,7 @@
 name: Deploy ARM Template
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
+
 env:
   AZURE_SUBSCRIPTION_ID: 2fd005ec-c6ea-466d-bdec-85b3422382bf   # set this to your Azure Subscription Id
   AZURE_RESOURCE_GROUP: GitHubActionExercise-rg   # set this to your target resource group
